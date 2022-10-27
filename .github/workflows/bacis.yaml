@@ -24,6 +24,6 @@ jobs:
           go-version: "1.19.1"
       - name: Install and Run Command
         run: |
-          echo "goEnv is ${goEnv}"
+          echo "GOROOT is useless now"
           go install
           setup-go-example
