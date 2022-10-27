@@ -38,3 +38,4 @@ jobs:
         run: |
           echo "GO env?"
           go env
+          go env GOROOT
