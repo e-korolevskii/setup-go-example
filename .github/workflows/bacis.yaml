@@ -36,6 +36,8 @@ jobs:
           go-version: "1.19.1"
       - name: Install and Run Command
         run: |
-          echo "GO ${{ env }} "
+          echo "GO ${{ toJSON(env) }} "
+          echo "___________________"
           go env
+          echo "___________________"
           go env GOROOT
